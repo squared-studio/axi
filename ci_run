@@ -1,3 +1,4 @@
 .PHONY: ci_vivado_run
 ci_vivado_run:
 	@> ___CI_REPORT;
+	@$(MAKE) vivado TOP=axi4l_pkg_tb CONFIG=default
