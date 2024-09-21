@@ -126,17 +126,17 @@ interface axi4_if #(
   assign RVALID   = resp.r_valid;
   assign RREADY   = req.r_ready;
 
-  `HANDSHAKE_SEND_RECV_LOOK(aw, axi_aw_chan_t, clk_i, req.aw, req.aw_valid, resp.aw_ready)
-  `HANDSHAKE_SEND_RECV_LOOK(w, axi_w_chan_t, clk_i, req.w, req.w_valid, resp.w_ready)
-  `HANDSHAKE_SEND_RECV_LOOK(b, axi_b_chan_t, clk_i, resp.b, resp.b_valid, req.b_ready)
-  `HANDSHAKE_SEND_RECV_LOOK(ar, axi_ar_chan_t, clk_i, req.ar, req.ar_valid, resp.ar_ready)
-  `HANDSHAKE_SEND_RECV_LOOK(r, axi_r_chan_t, clk_i, resp.r, resp.r_valid, req.r_ready)
+  `HANDSHAKE_SEND_RECV_LOOK(aw, axi_aw_chan_t, clk_i, arst_ni, req.aw, req.aw_valid, resp.aw_ready)
+  `HANDSHAKE_SEND_RECV_LOOK(w, axi_w_chan_t, clk_i, arst_ni, req.w, req.w_valid, resp.w_ready)
+  `HANDSHAKE_SEND_RECV_LOOK(b, axi_b_chan_t, clk_i, arst_ni, resp.b, resp.b_valid, req.b_ready)
+  `HANDSHAKE_SEND_RECV_LOOK(ar, axi_ar_chan_t, clk_i, arst_ni, req.ar, req.ar_valid, resp.ar_ready)
+  `HANDSHAKE_SEND_RECV_LOOK(r, axi_r_chan_t, clk_i, arst_ni, resp.r, resp.r_valid, req.r_ready)
 
-  `define BUS_RESET_AXI4_IF(__SIGNAL__)                                                            \
-    if (``__SIGNAL__`` !== '0) begin                                                               \
-      $display(`"%m applying autoreset for ``__SIGNAL__``    `");                                  \
-      ``__SIGNAL__`` <= '0;                                                                        \
-    end                                                                                            \
+  `define BUS_RESET_AXI4_IF(__SIGNAL__)                                                           \
+    if (``__SIGNAL__`` !== '0) begin                                                              \
+      $display(`"%m applying autoreset for ``__SIGNAL__``    `");                                 \
+      ``__SIGNAL__`` <= '0;                                                                       \
+    end                                                                                           \
 
   always @(negedge arst_ni) begin
     #1;
