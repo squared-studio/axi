@@ -9,6 +9,10 @@ package axi_default_param_pkg;
   parameter int AXI4L_DATA_WIDTH = 64;
   `AXI4L_T(axi4l, AXI4L_ADDR_WIDTH, AXI4L_DATA_WIDTH)
 
+  `include "axi4_typedef.svh"
+  `AXI4_T(sni, 64, 1024, 2, 2, 2, 2, 2)
+  `AXI4_T(mni, 64, 1024, 4, 4, 2, 2, 2)
+
 endpackage
 
 `endif

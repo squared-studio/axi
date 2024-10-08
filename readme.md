@@ -21,6 +21,10 @@ To know how to use different commands on this repo, type `make help` or just `ma
 ## RTL
 [axi4l_gpio ](./docs/rtl/axi4l_gpio.md)<br>
 [axi_fifo ](./docs/rtl/axi_fifo.md)<br>
+[axi_grid ](./docs/rtl/axi_grid.md)<br>
+[axi_grid_mni ](./docs/rtl/axi_grid_mni.md)<br>
+[axi_grid_sni ](./docs/rtl/axi_grid_sni.md)<br>
+[axi_grid_xni ](./docs/rtl/axi_grid_xni.md)<br>
 
 ## INCLUDE
 [axi4l_typedef.svh](./docs/inc/axi4l_typedef.svh.md)<br>
