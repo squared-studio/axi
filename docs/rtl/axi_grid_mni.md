@@ -31,4 +31,4 @@ Write a markdown documentation for this systemverilog module:
 |arst_ni|input|logic|||
 |req_o|output|req_t|||
 |resp_i|input|resp_t|||
-|`AXI_GRIP_MODULE_PORTS|interface||||
+|`AXI_GRID_MODULE_PORTS|interface||||

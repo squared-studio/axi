@@ -1,7 +1,7 @@
 `ifndef AXI_GRID_INTERFACING_SVH
 `define AXI_GRID_INTERFACING_SVH
 
-`define AXI_GRIP_MODULE_PORTS                                                                     \
+`define AXI_GRID_MODULE_PORTS                                                                     \
                                                                                                   \
   input  grid_id_t      h_awsid_i,                                                                \
   input  grid_id_t      h_awdid_i,                                                                \

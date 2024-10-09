@@ -20,7 +20,7 @@ module axi_grid_mni #(
     input  logic  arst_ni,
     output req_t  req_o,
     input  resp_t resp_i,
-    `AXI_GRIP_MODULE_PORTS
+    `AXI_GRID_MODULE_PORTS
 );
 
   //////////////////////////////////////////////////////////////////////////////////////////////////

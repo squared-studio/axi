@@ -16,7 +16,7 @@ module axi_grid_xni #(
 ) (
     input logic clk_i,
     input logic arst_ni,
-    `AXI_GRIP_MODULE_PORTS
+    `AXI_GRID_MODULE_PORTS
 );
 
   //////////////////////////////////////////////////////////////////////////////////////////////////

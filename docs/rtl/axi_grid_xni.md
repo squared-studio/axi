@@ -27,4 +27,4 @@ Write a markdown documentation for this systemverilog module:
 |-|-|-|-|-|
 |clk_i|input|logic|||
 |arst_ni|input|logic|||
-|`AXI_GRIP_MODULE_PORTS|interface||||
+|`AXI_GRID_MODULE_PORTS|interface||||
