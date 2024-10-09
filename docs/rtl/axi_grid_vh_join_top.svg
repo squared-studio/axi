@@ -1,0 +1,41 @@
+<svg height="840" width="840" xmlns="http://www.w3.org/2000/svg">
+<rect width="100%" height="100%" x="0" y="0" style="fill:white;stroke:white;stroke-width:0"/>
+<g style="fill:white;stroke:black;stroke-width:1">
+<rect width="725" height="725" x="60" y="60"/>
+<polygon points="10,95 10,85 30,85 40,95 60,95 40,95 30,105 10,105 10,95"/>
+<text x="65" y="85" dominant-baseline="hanging" text-anchor="start" font-size="20" style="fill:black;stroke:black;stroke-width:0">clk_i</text>
+<polygon points="10,145 10,135 30,135 40,145 60,145 40,145 30,155 10,155 10,145"/>
+<text x="65" y="135" dominant-baseline="hanging" text-anchor="start" font-size="20" style="fill:black;stroke:black;stroke-width:0">arst_ni</text>
+<polygon points="10,245 10,235 30,235 40,245 60,245 40,245 30,255 10,255 10,245"/>
+<text x="65" y="235" dominant-baseline="hanging" text-anchor="start" font-size="20" style="fill:black;stroke:black;stroke-width:0">v_did_i</text>
+<polygon points="10,295 10,285 30,285 40,295 60,295 40,295 30,305 10,305 10,295"/>
+<text x="65" y="285" dominant-baseline="hanging" text-anchor="start" font-size="20" style="fill:black;stroke:black;stroke-width:0">v_sid_i</text>
+<polygon points="10,345 10,335 30,335 40,345 60,345 40,345 30,355 10,355 10,345"/>
+<text x="65" y="335" dominant-baseline="hanging" text-anchor="start" font-size="20" style="fill:black;stroke:black;stroke-width:0">v_chan_i</text>
+<polygon points="10,395 10,385 30,385 40,395 60,395 40,395 30,405 10,405 10,395"/>
+<text x="65" y="385" dominant-baseline="hanging" text-anchor="start" font-size="20" style="fill:black;stroke:black;stroke-width:0">v_valid_i</text>
+<polygon points="10,445 20,435 40,435 40,445 60,445 40,445 40,455 20,455 10,445"/>
+<text x="65" y="435" dominant-baseline="hanging" text-anchor="start" font-size="20" style="fill:black;stroke:black;stroke-width:0">v_ready_o</text>
+<polygon points="10,545 10,535 30,535 40,545 60,545 40,545 30,555 10,555 10,545"/>
+<text x="65" y="535" dominant-baseline="hanging" text-anchor="start" font-size="20" style="fill:black;stroke:black;stroke-width:0">h_did_i</text>
+<polygon points="10,595 10,585 30,585 40,595 60,595 40,595 30,605 10,605 10,595"/>
+<text x="65" y="585" dominant-baseline="hanging" text-anchor="start" font-size="20" style="fill:black;stroke:black;stroke-width:0">h_sid_i</text>
+<polygon points="10,645 10,635 30,635 40,645 60,645 40,645 30,655 10,655 10,645"/>
+<text x="65" y="635" dominant-baseline="hanging" text-anchor="start" font-size="20" style="fill:black;stroke:black;stroke-width:0">h_chan_i</text>
+<polygon points="10,695 10,685 30,685 40,695 60,695 40,695 30,705 10,705 10,695"/>
+<text x="65" y="685" dominant-baseline="hanging" text-anchor="start" font-size="20" style="fill:black;stroke:black;stroke-width:0">h_valid_i</text>
+<polygon points="10,745 20,735 40,735 40,745 60,745 40,745 40,755 20,755 10,745"/>
+<text x="65" y="735" dominant-baseline="hanging" text-anchor="start" font-size="20" style="fill:black;stroke:black;stroke-width:0">h_ready_o</text>
+<polygon points="785,545 805,545 805,535 825,535 835,545 825,555 805,555 805,545 785,545"/>
+<text x="780" y="535" dominant-baseline="hanging" text-anchor="end" font-size="20" style="fill:black;stroke:black;stroke-width:0">did_o</text>
+<polygon points="785,595 805,595 805,585 825,585 835,595 825,605 805,605 805,595 785,595"/>
+<text x="780" y="585" dominant-baseline="hanging" text-anchor="end" font-size="20" style="fill:black;stroke:black;stroke-width:0">sid_o</text>
+<polygon points="785,645 805,645 805,635 825,635 835,645 825,655 805,655 805,645 785,645"/>
+<text x="780" y="635" dominant-baseline="hanging" text-anchor="end" font-size="20" style="fill:black;stroke:black;stroke-width:0">chan_o</text>
+<polygon points="785,695 805,695 805,685 825,685 835,695 825,705 805,705 805,695 785,695"/>
+<text x="780" y="685" dominant-baseline="hanging" text-anchor="end" font-size="20" style="fill:black;stroke:black;stroke-width:0">valid_o</text>
+<polygon points="785,745 805,745 815,735 835,735 835,745 835,755 815,755 805,745 785,745"/>
+<text x="780" y="735" dominant-baseline="hanging" text-anchor="end" font-size="20" style="fill:black;stroke:black;stroke-width:0">ready_i</text>
+<text x="420" y="800" dominant-baseline="hanging" text-anchor="middle" font-size="30" style="fill:black;stroke:black;stroke-width:0">axi_grid_vh_join</text>
+</g>
+</svg>

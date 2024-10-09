@@ -24,6 +24,8 @@ To know how to use different commands on this repo, type `make help` or just `ma
 [axi_grid ](./docs/rtl/axi_grid.md)<br>
 [axi_grid_mni ](./docs/rtl/axi_grid_mni.md)<br>
 [axi_grid_sni ](./docs/rtl/axi_grid_sni.md)<br>
+[axi_grid_vh_join ](./docs/rtl/axi_grid_vh_join.md)<br>
+[axi_grid_vh_split ](./docs/rtl/axi_grid_vh_split.md)<br>
 [axi_grid_xni ](./docs/rtl/axi_grid_xni.md)<br>
 
 ## INCLUDE
