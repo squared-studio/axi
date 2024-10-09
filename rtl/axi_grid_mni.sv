@@ -4,6 +4,7 @@ Author : Foez Ahmed (foez.official@gmail.com)
 */
 
 `include "axi_grid_interfacing.svh"
+`include "axi_default_param_pkg.sv"
 
 module axi_grid_mni #(
     parameter type      req_t          = axi_default_param_pkg::mni_req_t,
