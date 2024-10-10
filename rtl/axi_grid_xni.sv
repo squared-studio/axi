@@ -13,7 +13,7 @@ module axi_grid_xni #(
     parameter type      grid_b_chan_t  = axi_default_param_pkg::grid_b_chan_t,
     parameter type      grid_ar_chan_t = axi_default_param_pkg::grid_ar_chan_t,
     parameter type      grid_r_chan_t  = axi_default_param_pkg::grid_r_chan_t,
-    parameter grid_id_t NI_ID          = 0
+    parameter grid_id_t NI_ID          = '0
 ) (
     input logic clk_i,
     input logic arst_ni,

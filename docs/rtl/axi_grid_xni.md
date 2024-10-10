@@ -20,7 +20,7 @@ Write a markdown documentation for this systemverilog module:
 |grid_b_chan_t|type||axi_default_param_pkg::grid_b_chan_t||
 |grid_ar_chan_t|type||axi_default_param_pkg::grid_ar_chan_t||
 |grid_r_chan_t|type||axi_default_param_pkg::grid_r_chan_t||
-|NI_ID|grid_id_t||0||
+|NI_ID|grid_id_t||'0||
 
 ## Ports
 |Name|Direction|Type|Dimension|Description|

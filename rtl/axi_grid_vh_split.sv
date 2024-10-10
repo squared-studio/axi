@@ -13,7 +13,7 @@ module axi_grid_vh_split #(
     //Type for channel, default is `axi_default_param_pkg::grid_id_t`
     parameter type      chan_t    = axi_default_param_pkg::grid_id_t,
     //Grid ID for the network interface, default is `0`
-    parameter grid_id_t NI_ID     = 0
+    parameter grid_id_t NI_ID     = '0
 ) (
     input  grid_id_t did_i,    // Destination ID input
     input  grid_id_t sid_i,    // Source ID input
@@ -48,10 +48,13 @@ module axi_grid_vh_split #(
   always_comb begin
     v_valid_o = 0;
     h_valid_o = 0;
-    if (did_i.h == NI_ID.h) h_valid_o = valid_i;
-    else v_valid_o = valid_i;
-    if (did_i.h == NI_ID.h) ready_o = h_ready_i;
-    else ready_o = v_ready_i;
+    if (did_i.h == NI_ID.h && h_ready_i) begin
+      h_valid_o = valid_i;
+      ready_o   = h_ready_i;
+    end else begin
+      v_valid_o = valid_i;
+      ready_o   = v_ready_i;
+    end
   end
 
 endmodule

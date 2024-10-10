@@ -16,7 +16,7 @@ grid IDs and channels used.
 |-|-|-|-|-|
 |grid_id_t|type||axi_default_param_pkg::grid_id_t| Type for grid ID, default is `axi_default_param_pkg::grid_id_t`|
 |chan_t|type||axi_default_param_pkg::grid_id_t| Type for channel, default is `axi_default_param_pkg::grid_id_t`|
-|NI_ID|grid_id_t||0| Grid ID for the network interface, default is `0`|
+|NI_ID|grid_id_t||'0| Grid ID for the network interface, default is `0`|
 
 ## Ports
 |Name|Direction|Type|Dimension|Description|
