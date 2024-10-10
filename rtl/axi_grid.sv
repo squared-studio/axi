@@ -4,10 +4,11 @@ Author : Foez Ahmed (foez.official@gmail.com)
 */
 
 `include "axi4_typedef.svh"
-`include "axi_grid_interfacing.svh"
+`include "axi_grid_macros.svh"
 `include "axi_default_param_pkg.sv"
 
 module axi_grid #(
+    parameter bit  IS_PIPELINED = 1,
     parameter type sni_req_t = axi_default_param_pkg::sni_req_t,
     parameter type sni_resp_t = axi_default_param_pkg::sni_resp_t,
     parameter type mni_req_t = axi_default_param_pkg::mni_req_t,
@@ -217,6 +218,7 @@ module axi_grid #(
       end else begin : gen_xni
         ////////////////////////////////////////////////////////////
         axi_grid_xni #(
+            .IS_PIPELINED(IS_PIPELINED),
             .grid_id_t(grid_id_t),
             .grid_aw_chan_t(grid_aw_chan_t),
             .grid_w_chan_t(grid_w_chan_t),

@@ -7,9 +7,8 @@ Author : Foez Ahmed (foez.official@gmail.com)
 `include "axi_default_param_pkg.sv"
 
 module axi_grid_vh_join #(
-    parameter type      grid_id_t = axi_default_param_pkg::grid_id_t,  // Type for grid ID
-    parameter type      chan_t    = axi_default_param_pkg::grid_id_t,  // Type for channel
-    parameter grid_id_t NI_ID     = '0                                 // Network Interface ID
+    parameter type grid_id_t = axi_default_param_pkg::grid_id_t,  // Type for grid ID
+    parameter type chan_t    = axi_default_param_pkg::grid_id_t   // Type for channel
 ) (
     input logic clk_i,   // Clock input
     input logic arst_ni, // Asynchronous reset (active low)
