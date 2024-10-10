@@ -7,7 +7,7 @@ Author : Foez Ahmed (foez.official@gmail.com)
 `include "axi_default_param_pkg.sv"
 
 module axi_grid_xni #(
-    parameter bit       IS_PIPELINED   = 1,
+    parameter bit       IS_PIPELINED   = 0,
     parameter type      grid_id_t      = axi_default_param_pkg::grid_id_t,
     parameter type      grid_aw_chan_t = axi_default_param_pkg::grid_aw_chan_t,
     parameter type      grid_w_chan_t  = axi_default_param_pkg::grid_w_chan_t,

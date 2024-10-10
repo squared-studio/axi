@@ -14,6 +14,7 @@ Write a markdown documentation for this systemverilog module:
 ## Parameters
 |Name|Type|Dimension|Default Value|Description|
 |-|-|-|-|-|
+|IS_PIPELINED|bit||1||
 |sni_req_t|type||axi_default_param_pkg::sni_req_t||
 |sni_resp_t|type||axi_default_param_pkg::sni_resp_t||
 |mni_req_t|type||axi_default_param_pkg::mni_req_t||

@@ -15,7 +15,6 @@ It prioritizes the vertical channel over the horizontal channel based on the `pr
 |-|-|-|-|-|
 |grid_id_t|type||axi_default_param_pkg::grid_id_t|Type for grid ID|
 |chan_t|type||axi_default_param_pkg::grid_id_t|Type for channel|
-|NI_ID|grid_id_t||'0|Network Interface ID|
 
 ## Ports
 |Name|Direction|Type|Dimension|Description|

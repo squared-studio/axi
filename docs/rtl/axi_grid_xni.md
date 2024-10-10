@@ -14,6 +14,7 @@ Write a markdown documentation for this systemverilog module:
 ## Parameters
 |Name|Type|Dimension|Default Value|Description|
 |-|-|-|-|-|
+|IS_PIPELINED|bit||0||
 |grid_id_t|type||axi_default_param_pkg::grid_id_t||
 |grid_aw_chan_t|type||axi_default_param_pkg::grid_aw_chan_t||
 |grid_w_chan_t|type||axi_default_param_pkg::grid_w_chan_t||
