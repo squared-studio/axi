@@ -186,7 +186,7 @@ module axi_grid #(
             .grid_b_chan_t(grid_b_chan_t),
             .grid_ar_chan_t(grid_ar_chan_t),
             .grid_r_chan_t(grid_r_chan_t),
-            .NI_ID({h:row, v:col})
+            .NI_ID('{h:row, v:col})
         ) u_mni (
             .clk_i,
             .arst_ni,
@@ -206,7 +206,7 @@ module axi_grid #(
             .grid_b_chan_t(grid_b_chan_t),
             .grid_ar_chan_t(grid_ar_chan_t),
             .grid_r_chan_t(grid_r_chan_t),
-            .NI_ID({h:row, v:col})
+            .NI_ID('{h:row, v:col})
         ) u_sni (
             .clk_i,
             .arst_ni,
@@ -225,7 +225,7 @@ module axi_grid #(
             .grid_b_chan_t(grid_b_chan_t),
             .grid_ar_chan_t(grid_ar_chan_t),
             .grid_r_chan_t(grid_r_chan_t),
-            .NI_ID({h:row, v:col})
+            .NI_ID('{h:row, v:col})
         ) u_xni (
             .clk_i,
             .arst_ni,
