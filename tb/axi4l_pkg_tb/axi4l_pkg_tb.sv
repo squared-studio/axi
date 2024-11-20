@@ -1,5 +1,9 @@
 // Description here
-// ### Author : name (email)
+// Author : name (email)
+// This file is part of squared-studio:axi
+// Copyright (c) 2024 squared-studio
+// Licensed under the MIT License
+// See LICENSE file in the project root for full license information
 
 `include "axi4l_typedef.svh"
 `include "vip/axi4l_pkg.sv"

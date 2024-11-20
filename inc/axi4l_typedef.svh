@@ -1,8 +1,12 @@
 // TYPE DEFINIATION FOR AXI4 LITE CHANNELS AND REQUEST-RESPONSE STRUCTURE
-// ### Author : Foez Ahmed (foez.official@gmail.com))
+// Author : Foez Ahmed (foez.official@gmail.com)
+// This file is part of squared-studio:axi
+// Copyright (c) 2024 squared-studio
+// Licensed under the MIT License
+// See LICENSE file in the project root for full license information
 
 `ifndef AXI4L_TYPEDEF_SVH
-`define AXI4L_TYPEDEF_SVH
+`define AXI4L_TYPEDEF_SVH 1
 
 `define AXI4L_AX_CHAN_T(__NM__, __AW__)                                                           \
   typedef struct packed {                                                                         \

@@ -1,7 +1,11 @@
-// ### Author : Foez Ahmed (foez.official@gmail.com))
+// Author : Foez Ahmed (foez.official@gmail.com)
+// This file is part of squared-studio:axi
+// Copyright (c) 2024 squared-studio
+// Licensed under the MIT License
+// See LICENSE file in the project root for full license information
 
 `ifndef AXI4L_ASSIGN_SVH
-`define AXI4L_ASSIGN_SVH
+`define AXI4L_ASSIGN_SVH 1
 
 // macro for setting or assigning axi4l req to req
 `define AXI4L_REQ_TO_REQ(__MODE__, __DST__, __SRC__)                                              \

@@ -2,6 +2,10 @@
 The `axi_grid_vh_join` module is designed to join vertical and horizontal channels in an AXI grid.
 It prioritizes the vertical channel over the horizontal channel based on the `prioritize_v` signal.
 Author : Foez Ahmed (foez.official@gmail.com)
+<br>This file is part of squared-studio:axi
+<br>Copyright (c) 2024 squared-studio
+<br>Licensed under the MIT License
+<br>See LICENSE file in the project root for full license information
 */
 
 `include "axi_default_param_pkg.sv"

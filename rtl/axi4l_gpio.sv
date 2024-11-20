@@ -27,6 +27,10 @@ The module uses an AXI FIFO to handle the AXI4L requests and responses. It also 
 a register to handle the `wdata`, `wen`, and `pull` values. Finally, it uses an IO pad for each wire
 in the byte in the `RowPerType` and a multiplexer (`mux`) to handle the response data.
 Author : Foez Ahmed (foez.official@gmail.com)
+<br>This file is part of squared-studio:axi
+<br>Copyright (c) 2024 squared-studio
+<br>Licensed under the MIT License
+<br>See LICENSE file in the project root for full license information
 */
 
 `include "axi_default_param_pkg.sv"

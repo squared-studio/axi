@@ -1,7 +1,11 @@
-// ### Author : Foez Ahmed (foez.official@gmail.com))
+// Author : Foez Ahmed (foez.official@gmail.com)
+// This file is part of squared-studio:axi
+// Copyright (c) 2024 squared-studio
+// Licensed under the MIT License
+// See LICENSE file in the project root for full license information
 
 `ifndef AXI4L_PKG_SV
-`define AXI4L_PKG_SV
+`define AXI4L_PKG_SV 1
 
 `include "axi4l_typedef.svh"
 `include "vip/memory_pkg.sv"
