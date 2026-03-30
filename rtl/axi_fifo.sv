@@ -77,8 +77,9 @@ module axi_fifo #(
   //////////////////////////////////////////////////////////////////////////////////////////////////
 
   fifo #(
+      .PIPELINED ('1),
       .ELEM_WIDTH($bits(req_i.aw)),
-      .DEPTH(AW_FIFO_DEPTH)
+      .FIFO_SIZE ($clog2(AW_FIFO_DEPTH))
   ) u_fifo_aw (
       .clk_i(clk_i),
       .arst_ni(arst_ni),
@@ -92,8 +93,9 @@ module axi_fifo #(
   );
 
   fifo #(
+      .PIPELINED ('1),
       .ELEM_WIDTH($bits(req_i.w)),
-      .DEPTH(W_FIFO_DEPTH)
+      .FIFO_SIZE ($clog2(W_FIFO_DEPTH))
   ) u_fifo_w (
       .clk_i(clk_i),
       .arst_ni(arst_ni),
@@ -107,8 +109,9 @@ module axi_fifo #(
   );
 
   fifo #(
+      .PIPELINED ('1),
       .ELEM_WIDTH($bits(resp_o.b)),
-      .DEPTH(B_FIFO_DEPTH)
+      .FIFO_SIZE ($clog2(B_FIFO_DEPTH))
   ) u_fifo_b (
       .clk_i(clk_i),
       .arst_ni(arst_ni),
@@ -122,8 +125,9 @@ module axi_fifo #(
   );
 
   fifo #(
+      .PIPELINED ('1),
       .ELEM_WIDTH($bits(req_i.ar)),
-      .DEPTH(AR_FIFO_DEPTH)
+      .FIFO_SIZE ($clog2(AR_FIFO_DEPTH))
   ) u_fifo_ar (
       .clk_i(clk_i),
       .arst_ni(arst_ni),
@@ -137,8 +141,9 @@ module axi_fifo #(
   );
 
   fifo #(
+      .PIPELINED ('1),
       .ELEM_WIDTH($bits(resp_o.r)),
-      .DEPTH(R_FIFO_DEPTH)
+      .FIFO_SIZE ($clog2(R_FIFO_DEPTH))
   ) u_fifo_r (
       .clk_i(clk_i),
       .arst_ni(arst_ni),
